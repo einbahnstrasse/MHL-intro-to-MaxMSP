@@ -411,7 +411,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 
 svg {
     /* display: block; */
-    font: 1.5em var(--r-heading-font);
+    font: 0.75em var(--r-heading-font);
     letter-spacing: 0.01em;
     width: 960px;
     height: 300px;
