@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Intro to MIDI | Intro to Digital Music</title>
+		<title>Intro to MaxMSP | Synthesis Techniques and Creative Coding</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
@@ -22,8 +22,8 @@
 				<section>
 					<svg > 
 						<symbol id="s-text">
-							<text text-anchor="middle" x="50%" y="80%">Intro to MIDI</text>
-							<text text-anchor="middle" x="51%" y="81%">Intro to MIDI</text>
+							<text text-anchor="middle" x="50%" y="80%">Intro to MaxMSP</text>
+							<text text-anchor="middle" x="51%" y="81%">Intro to MaxMSP</text>
 						</symbol>
 						<g class = "g-ants">
 							<use xlink:href="#s-text" class="text-copy"></use>
@@ -33,7 +33,7 @@
 							<use xlink:href="#s-text" class="text-copy"></use>
 						</g>
 					</svg>
-					<h5 style="position:absolute;right:10px;" class="fade-in-text">Introduction to Digital Music — Louis Goldford (2023)</h5>
+					<h5 style="position:absolute;right:10px;" class="fade-in-text">Synthesis Techniques — Louis Goldford (2024)</h5>
 				</section>
 				<section data-auto-animate>
 					<h5 style="text-align: left;">These slides will discuss:</h5>
@@ -41,58 +41,51 @@
 				<section data-auto-animate>
 					<h5 style="text-align: left;">These slides will discuss:</h5>
 					<div style="font-size: 0.65em; text-align: left;" data-auto-animate-id="list">
-						<h6>What is MIDI?</h6>
-						<h6 class="fragment">Software + Hardware</h6>
-						<h6 class="fragment">The MIDI Technical Standard</h6>
-						<h6 class="fragment">MIDI For the Future</h6>
+						<h6>What is MaxMSP?</h6>
+						<h6 class="fragment">Max History</h6>
+						<h6 class="fragment">Some Useful Stuff Up-Front</h6>
 					</div>
 				</section>
 				<section data-auto-animate>
 					<h5 style="text-align: left;">These slides will discuss:</h5>
 					<div style="font-size: 0.65em; text-align: left;" data-auto-animate-id="list">
-						<h6>What is MIDI?</h6>
+						<h6>What is MaxMSP?</h6>
 							<ul>
-								<li>MIDI Definition + Use Cases</li>
-								<li>MIDI History</li>
+								<li>Uses (...and Abuses)</li>
+								<li>Visual, Object-Oriented Programming</li>
+								<li>Realtime vs. Non-Realtime ("Offline") Electronics</li>
 							</ul>
-						<h6>Software + Hardware</h6>
+						<h6>Max History</h6>
 							<ul>
-								<li>Cables, Connectors, and MIDI Controllers</li>
-								<li>Using MIDI in a Sequencer</li>
+								<li>Max Mathews</li>
+								<li>Miller Puckette</li>
 							</ul>
-						<h6>The MIDI Technical Standard</h6>
+						<h6>Some Useful Stuff Up-Front</h6>
 							<ul>
-								<li>"Note-On," "Note-Off," and Other Messages</li>
-								<li>Program Change + Control Change Messages</li>
-								<li>MIDI File Formats + Sound Banks</li>
-							</ul>
-
-						<h6>MIDI For the Future</h6>
-							<ul>
-								<li>Expressive New MIDI Controllers</li>
-								<li>MPE (MIDI Polyphonic Expression)</li>
-								<li>MIDI Over USB, TRS, Ethernet, Wireless</li>
+								<li>Max is Not a DAW</li>
+								<li>Pedagogical Patches In Class</li>
+								<li>Debugging</li>
 							</ul>
 					</div>
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<p>
-							<b><u>M</u>usical <u>I</u>nstrument <u>D</u>igital <u>I</u>nterface</b> (MIDI) is a technical standard that allows multiple electronic devices to <b>synchronize</b> data in real-time.
+							According to the software writer's website,<br>_Max is an interactive, visual patching environment for musicians, artists, and anyone who loves creating, inventing, or prototyping their own unique software._   
 						</p>
 					</div>
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<p>
@@ -105,7 +98,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<p>
@@ -121,7 +114,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<p>
@@ -140,7 +133,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<p>
@@ -151,7 +144,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<p>
@@ -164,7 +157,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Use Cases — What is MIDI Used For?</h6>
@@ -196,7 +189,7 @@
 
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Use Cases — What is MIDI Used For?</h6>
@@ -216,7 +209,7 @@
 
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Are MIDI and <span id="red">sound</span> the same thing?</h6>
@@ -239,7 +232,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>MIDI is like a musical score...</h6>
@@ -265,7 +258,7 @@
 				</section>	
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Is MIDI a <span id="red">computer language</span>?</h6>
@@ -288,7 +281,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Is MIDI a <span id="red">computer language</span>?</h6>
@@ -305,7 +298,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Is MIDI a <span id="red">computer language</span>?</h6>
@@ -328,7 +321,7 @@
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MIDI? — MIDI Definition + Use Cases</h4>
+						<h4>What is MaxMSP? — Uses (...and Abuses)</h4>
 					</div>
 					<div class="special-body">
 						<h6>Is MIDI a <span id="red">computer language</span>?</h6>
