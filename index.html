@@ -100,7 +100,7 @@
 						</p>
 						<ul>
 							<li class="fragment">full-scale concert pieces with electronics</li>  
-							<li class="fragment">improvisations with technology using live processing</li>  
+							<li class="fragment">improvisational environments with technology</li>  
 							<li class="fragment">video art</li>  
 							<li class="fragment">sound art installations</li>  
 							<li class="fragment">audio effects and "plugin" software</li>  
@@ -113,26 +113,12 @@
 					</div>
 					<div class="special-body">
 						<p>
-							In <em>Sound Synthesis Techniques and Creative Coding</em>, we'll focus on using MaxMSP to teach you:
+							In <em>Sound Synthesis Techniques and Creative Coding</em>,<br>we'll focus on using MaxMSP to teach you:
 						</p>
 						<ul>
 							<li class="fragment">a variety of classic electronic synthesis methods,</li>  
 							<li class="fragment"><em>...to understand what you're hearing and what is artistically available to you...</em></li>  
-							<li class="fragment">how to go from making your <strong>very first sounds</strong>, at the beginning of the semester, to realizing your <strong>first full-scale project</strong> using live signal processing.</li>  
-						</ul>
-				</section>
-				<section class="special-slide" data-auto-animate>
-					<div class="special-header">
-						<h4>What is MaxMSP? — Uses (and Abuses)</h4>
-					</div>
-					<div class="special-body">
-						<p>
-							We can use MaxMSP to create many kinds of <strong>signals</strong>:
-						</p>
-						<ul>
-							<li class="fragment">signals that carry <strong>data</strong> (simple numbers, strings of text characters, lists, etc.)</li>  
-							<li class="fragment">signals that carry <strong>sound</strong> (numbers that move fast...)</li>  
-							<li class="fragment">and signals that carry <strong>video</strong> (matrices of numbers carrying, for example, pixel values)</li>  
+							<li class="fragment">how to go from making your <strong>very first sounds</strong>, at the beginning of the semester,<br>to realizing your <strong>first full-scale project</strong> using live signal processing.</li>  
 						</ul>
 				</section>
 				<section class="special-slide" data-auto-animate>
@@ -142,30 +128,30 @@
 					<div class="special-body">
 						<h5>Is Max a "program?"</h5>
 						<p class="fragment">
-							MaxMSP is unlike the computer programs or applications you might be used to...  
+							MaxMSP is unlike other computer programs or applications you might be used to...  
 						</p>
 						<p class="fragment">
 							It's more helpful to think of MaxMSP as a <strong>programming environment</strong>,
 						</p>
 						<p class="fragment">
-							meaning: it's a program you use to create your own programs.  
+							meaning: it's a program you use to create other programs.  
 						</p>
 					</div>
 				</section>
 				<section class="special-slide" data-auto-animate>
 					<div class="special-header">
-						<h4>What is MaxMSP? — Uses (and Abuses)</h4>
+						<h4>What is MaxMSP? — Visual Programming</h4>
 					</div>
 					<div class="special-body">
 						<h5>Is Max a programming language?</h5>
 						<p class="fragment">
-							If you're not a programmer, MaxMSP <em>feels like</em> a little bit like a programming language,<br>because they share many of the same characteristics.    
+							If you're not a programmer, MaxMSP <em>feels</em> a little bit like a programming language,<br>because they share many of the same characteristics that help you build larger structures in software.    
 						</p>
 						<p class="fragment">
-							But, to be sure, <strong>MaxMSP is not quite a programming language</strong> because it lacks some of the fundamental features of these languages.  
+							But, to be sure, <strong>MaxMSP is <em>not quite</em> a programming language</strong><br>because it lacks some of the fundamental features that make programming languages more versatile.  
 						</p>
 						<p class="fragment">
-							In other words, you can't quite create <em>anything</em> in MaxMSP (that you would create in a proper programming language) ...but close!      
+							In other words, you can't quite create <em>anything</em> in MaxMSP<br>(that you would create in a proper programming language) ...but close!      
 						</p>
 					</div>
 				</section>
@@ -176,7 +162,7 @@
 					<div class="special-body">
 						<h5>Is MaxMSP "coding?"</h5>
 						<p class="fragment">Well, <em>sort of</em>...</p>
-						<p class="fragment">Instead of typing lines of code, in MaxMSP, we construct our projects using <strong>visual, object-oriented programming</strong>:</p>
+						<p class="fragment">Instead of typing lines of code, in MaxMSP we construct our projects using<br><strong>visual, object-oriented programming</strong>:</p>
 						<p class="fragment">A file in MaxMSP is called a <strong>patch</strong>.</p>
 						<p class="fragment">Inside our patches, we <strong>connect</strong> small boxes in space.</p>
 					</div>
@@ -190,9 +176,36 @@
 						<p class="fragment">These boxes are called <strong>objects</strong>.</p>
 						<p class="fragment">Inside the objects, we type the names of <strong>functions</strong>,</p>
 						<p class="fragment">and we connect them using <strong>patch cables</strong>.</p>
-						<p class="fragment">In this way, sound and video data <strong>move from one box to the next</strong> through the patch cables, and our <strong>data is processed one object at a time</strong> in a series of steps.</p>
+						<p class="fragment">In this way, sound and video data <strong>move from one box to the next</strong> through the patch cables,<br>and our <strong>data is processed one object at a time</strong> in a series of steps.</p>
 					</div>
 				</section>
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header">
+						<h4>What is MaxMSP? — Visual Programming</h4>
+					</div>
+					<div class="special-body">
+						<p>In this way, the system is <strong>visual</strong> because it mimics the way a <strong>modular synthesizer</strong> works:</p>
+						<img data-src="img/800px-Buchla_200e.jpg" class="fade-in-text" alt="Buchla 200e">
+						<p class="fragment">In this Buchla 200e synth, the individual boxes with knobs is called a <strong>module</strong>.</p>  
+						<p class="fragment">Each <strong>module</strong> performs some kind of operation on the incoming signal, and passes its output to the next module via the <strong>patch cables</strong>.</p>  
+						<p class="fragment">The arragement of cables and values that make up a particular sound program is called a <strong>patch</strong>, just like in MaxMSP.</p>   
+					</div>
+				</section>
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header">
+						<h4>What is MaxMSP? — Visual Programming</h4>
+					</div>
+					<div class="special-body">
+						<p>
+							In the digital synthesis world of MaxMSP, <strong>patch cables</strong> carry many kinds of <strong>signals</strong>:
+						</p>
+						<ul>
+							<li class="fragment">signals that carry <strong>data</strong> (simple numbers, strings of text characters, lists, etc.)</li>  
+							<li class="fragment">signals that carry <strong>sound</strong> (numbers that move fast...)</li>  
+							<li class="fragment">and signals that carry <strong>video</strong> (matrices of numbers carrying, for example, pixel values)</li>  
+						</ul>
+				</section>
+				
 
 
 
