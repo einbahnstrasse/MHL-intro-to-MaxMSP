@@ -206,8 +206,8 @@
 					</div>
 					<div class="special-body">
 						<img data-src="img/800px-Buchla_200e.jpg" width="50%" class="fade-in-text" alt="Buchla 200e">  
-						<p class="fragment">In this way, the system is <strong>visual</strong> because it mimics the way a <strong>modular synthesizer</strong> works:<br><em>you can see the data flow</em>.</p>
-						<p class="fragment">In this Buchla 200e synth, the individual boxes with knobs are called <strong>modules</strong>.</p>  
+						<p class="fragment">In this way, the system is <strong>visual</strong> because it mimics how a <strong>modular synthesizer</strong> works:<br><em>you can see the data flow</em>.</p>
+						<p class="fragment">In this Buchla 200e system, the individual boxes with knobs are called <strong>modules</strong>.</p>  
 						<p class="fragment">Each <strong>module</strong> performs some kind of unique operation on the incoming signal<br>and passes its output to the next module through <strong>patch cables</strong>.</p>  
 						<p class="fragment">An arrangement of cables and module knob settings that make up a particular<br>sound program is called a <strong>patch</strong>, similar to a patch in MaxMSP.</p>   
 					</div>
@@ -234,6 +234,66 @@
 							<li class="fragment">signals that carry <strong>sound</strong> (numbers that move fast...)</li>  
 							<li class="fragment">and signals that carry <strong>video</strong> (matrices of numbers carrying, for example, pixel values)</li>  
 						</ul>
+				</section>
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header">
+						<h4>What is MaxMSP? — Realtime vs. Offline</h4>
+					</div>
+					<div class="special-body">
+						<h5>
+							What is Realtime vs. Offline Signal Processing?  
+						</h5>
+						<p class="fragment">
+							Unlike the audio programs of its own time, MaxMSP grew to become<br>a tool for <strong>realtime signal processing</strong>.   
+						</p>
+						<p class="fragment">
+							This means Max processes and outputs sound signals at nearly the same time it receives them,  
+						</p>
+						<p class="fragment">
+							...which is very fast! 
+						</p>
+				</section>
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header">
+						<h4>What is MaxMSP? — Realtime vs. Offline</h4>
+					</div>
+					<div class="special-body">
+						<h5>
+							What is Realtime vs. Offline Signal Processing?  
+						</h5>
+						<p class="fragment">
+							By contrast, <strong>non-realtime</strong> or <strong>"offline"</strong> signal processing is much slower.
+						</p>
+						<p class="fragment">
+							When you use a program like ProTools, Reaper, or Logic, these tools were meant to process sound in one big chunk:
+						</p>
+						<p class="fragment">
+							From the start to the end of the music. 
+						</p>
+						<p class="fragment">
+							When you play back or mix an entire sound file, for example, that is <em>non-realtime</em>.
+						</p> 
+				</section>
+				<section class="special-slide" data-auto-animate>
+					<div class="special-header">
+						<h4>What is MaxMSP? — Realtime vs. Offline</h4>
+					</div>
+					<div class="special-body">
+						<h5>
+							What is Realtime vs. Offline Signal Processing?  
+						</h5>
+						<p class="fragment">
+							MaxMSP can be used for both realtime and non-realtime applications, 
+						</p>
+						<p class="fragment">
+							But it was designed for realtime use, and that is where it really shines.
+						</p>
+						<p class="fragment">
+							When you add an audio effect to the input signal of a microphone, for example a delay or harmonizer,
+						</p>
+						<p class="fragment">
+							these are simple examples of realtime audio processing. 
+						</p> 
 				</section>
 				
 
